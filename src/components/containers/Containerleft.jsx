@@ -6,5 +6,9 @@ const Containerleft = styled.div`
     margin: 0 auto;
     display: inline-block;
     position: absolute;
+
+    @media (max-width: 667px){
+        width: 0%;
+    }
 `
 export default Containerleft;

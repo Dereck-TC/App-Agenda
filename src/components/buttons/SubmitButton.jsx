@@ -7,6 +7,10 @@ const SubmitButton = styled.button`
     width: 8rem;
     border: none;
     background: #7F4A88;
+
+    &:hover{
+        background: #5e126b;
+    }
 `
 
 export default SubmitButton
