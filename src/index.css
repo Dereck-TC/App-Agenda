@@ -3,6 +3,8 @@ html {
   --primary-color: #282c34;
   --secondary-color: #fff;
   --background-color: #ffffff;
+  --background-gradienta: linear-gradient(125deg, #FFFFFF 0%, #000000 100%), linear-gradient(200deg, #FFD9E8 0%, #FFD9E8 50%, #DE95BA calc(50% + 1px), #DE95BA 60%, #7F4A88 calc(60% + 1px), #7F4A88 75%, #4A266A calc(75% + 1px), #4A266A 100%), linear-gradient(113deg, #FFD9E8 0%, #FFD9E8 40%, #DE95BA calc(40% + 1px), #DE95BA 50%, #7F4A88 calc(50% + 1px), #7F4A88 70%, #4A266A calc(70% + 1px), #4A266A 100%);
+  --background-blend-mode: overlay, overlay, normal;
 }
 
 /* Variables de color si el tema es dark */
@@ -10,6 +12,8 @@ html[data-theme="dark"] {
   --primary-color: #fff;
   --secondary-color: #342830;
   --background-color: #0e0e0e;
+  --background-gradienta: radial-gradient(100% 225% at 100% 0%, #FAFF00 0%, #000000 100%), linear-gradient(235deg, #DB00FF 0%, #000000 100%), linear-gradient(45deg, #241E92 0%, #241E92 40%, #5432D3 40%, #5432D3 50%, #7B6CF6 50%, #7B6CF6 70%, #E5A5FF 70%, #E5A5FF 100%), linear-gradient(180deg, #01024E 0%, #01024E 43%, #543864 43%, #543864 62%, #8B4367 62%, #8B4367 80%, #FF6464 80%, #FF6464 100%);
+  --background-blend-mode: overlay, hard-light, overlay, normal;
 }
 body {
   margin: 0;

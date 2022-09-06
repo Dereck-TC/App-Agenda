@@ -7,6 +7,7 @@ const Banner = styled.div`
     padding: 30px 0px 30px 50px;
     font-size: 2.5rem;
     font-weight: bold;
+    color: var(--primary-color);
 
     @media (max-width: 667px) {
         width: 100%;

@@ -9,7 +9,8 @@ import Flogin from "../components/fondos/flogin"
 import Banner from "../components/headers/Banner"
 import { authContext } from '../context/AuthContext'
 import { themeContext } from '../context/ThemeContext'
-import ThemeButton from '../components/buttons/ThemeButton'
+// import ThemeButton from '../components/buttons/ThemeButton'
+import CheckBox from '../components/buttons/CheckBox'
 
 export default function Login() {
 
@@ -32,7 +33,7 @@ export default function Login() {
     const { checked, setChecked } = useContext(themeContext)
     
     const toggleThemeChange = () => {
-     
+        console.log(checked)
         if (checked === false) {
           localStorage.setItem("theme", "dark");
           setChecked(true);
@@ -49,9 +50,8 @@ export default function Login() {
             <Input ref={email} placeholder="Email" type="email" />
             <Input ref={password} placeholder="Password" type="password" />
             <SubmitButton>Login</SubmitButton>
-            <ThemeButton type="checkbox" defaultChecked={checked} onChange={()=>toggleThemeChange()}>
-                {/* <label>Cambiar</label> */}
-                </ThemeButton>
+            {/* <ThemeButton type="checkbox" defaultChecked={checked} onChange={()=>toggleThemeChange()}></ThemeButton> */}
+            <CheckBox  defchecked={checked} press={()=>toggleThemeChange()}></CheckBox>
         </Form>
     </Containerright>
     <Containerleft>

@@ -4,12 +4,12 @@ export const themeContext = React.createContext()
 
 export default function ThemeContext({children}) {
     const [checked, setChecked] = useState(
-        localStorage.getItem('theme') === 'dark' ? true : false
+        localStorage.getItem('theme') === 'dark'
     )
     useEffect(() => {
         document
-          .getElementsByTagName("HTML")[0]
-          .setAttribute("data-theme", localStorage.getItem("theme"));
+          .getElementsByTagName('html')[0]
+          .setAttribute('data-theme', localStorage.getItem('theme'));
     }, [checked]);
 
     
